@@ -157,3 +157,34 @@ age = 18;
     ```js
     console.log(typeof null) //Returns object
     ```
+## Lecture 12: let, const and var
+### Different ways of declaring variables
+#### let
+let is a modern way to declare a variable, easy to reassign/mutate
+```js
+let age = 30;
+age = 31;
+```
+#### const
+const (constants) is used for variables that don't change. Raises a TypeError when you try to reassign it.
+```js
+const BIRTHYEAR = 1990;
+BIRTHYEAR = 1991; //Raises TypeError
+```
+You also can not leave a constant empty like you can do with let.
+```js
+const BIRTHYEAR; 
+//Raises a SyntaxError: Missing initializer in const declaration
+```
+#### var
+var is the old way of declaring a variable (prior to es6). Should not be used in modern code. 
+```js
+var job = 'plumber'
+job = 'programmer'
+```
+#### assigning a variable without declaring it
+This does work but can lead to problems.
+```js
+lastName = 'Smith'
+console.log(lastName)
+```
