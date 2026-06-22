@@ -188,3 +188,47 @@ This does work but can lead to problems.
 lastName = 'Smith'
 console.log(lastName)
 ```
+## lecture 13 Basic Operators
+You can log multiple things by seperating them with a comma.
+```js 
+console.log(19, 50)
+```
+### Mathematical operators
+Mathematical operators: + - * / 
+```js
+const year = 2026
+const ageJohn = currentYear - 1990;
+const ageEric = currentYear - 1974;
+console.log(ageJohn, ageEric) ;
+
+console.log(ageJohn / 2, ageEric * 10);
+```
+You can use the + operator to join strings.
+```js
+const firstName = 'John';
+const lastName = 'Smith';
+console.log(firstName + ' ' + lastName);
+```
+### Assignment operators
++=, -= *=, /= (Works the same as in Python.)
+```js
+let x = 10 + 5; //15
+x += 10; // x + 10 = 25
+x *= 10; //x * 10 = 250
+```
+++ adds 1 to the variable, -- removes 1 from the variable
+```js
+let x = 100;
+x++; //x + 1 = 101
+x = 100;
+x--; //x - 1 = 99
+```
+
+### Comparing Operators
+returns true or false (boolean).
+Operators: > (greater), < (lesser), >= (greater or equal), <= (lesser or equal)
+
+```js
+console.log(100 > 50); 
+//Returns true because 100 is bigger than 50.
+```
