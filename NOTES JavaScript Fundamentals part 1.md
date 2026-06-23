@@ -232,3 +232,17 @@ Operators: > (greater), < (lesser), >= (greater or equal), <= (lesser or equal)
 console.log(100 > 50); 
 //Returns true because 100 is bigger than 50.
 ```
+## Lecture 14 Operator Precedence
+The order in which operators are executed.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence 
+
+```js
+let x, y; //You can declare multiple variables at once
+x = y = 5 + 5;
+//x = 10 and y = 10
+
+const ageJohn = 30;
+const ageMark = 20;
+const averageAge = (ageJohn + ageMark) / 2;
+// Division gets executed before addition so use bracket's.
+```

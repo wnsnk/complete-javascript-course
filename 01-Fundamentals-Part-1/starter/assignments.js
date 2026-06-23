@@ -22,7 +22,7 @@ console.log(language);
 // Try to change one of the changed variables now, and observe what happens.
 language = 'Dutch';
 
-// Lecture 12 Basic Operators
+// Lecture 13 Basic Operators
 // If your country split in half, and each half would contain half the population, then how many people would live in each half?
 // Increase the population of your country by 1 and log the result to the console.
 // Finland has a population of 6 million. Does your country have more people than Finland?
@@ -34,4 +34,4 @@ const finlandPopulation = 6000000;
 hasMorePeopleThanFinland = population > finlandPopulation;
 const averagePopulationOfACountry = 33000000;
 hasLessPopulationThanAverage = population < averagePopulationOfACountry;
-console.log(country, 'is in', continent, 'and its', population, 'people speak', language)
+console.log(country, 'is in', continent, 'and its', population, 'people speak', language);
