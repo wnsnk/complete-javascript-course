@@ -312,7 +312,7 @@ string(1999);
 ```
 #### Converting to boolean
 ```js
-
+Boolean(1);
 ```
 
 ### Type Coercion
@@ -326,4 +326,35 @@ console.log('23' - '10' - 3);
 ```js
 let n = '1' + 1; //converts number to string: 11
 n = n - 1; //converts string to number: 10
+```
+## Lecture 21: Truthy and Falsy Values
+### falsy
+falsy values are not false but will become false when converted to a boolean.
+There are 5 'falsy' values:
+1. 0
+2. '' (empty string)
+3. undefined
+4. null
+5. NaN
+*false is not falsy because IT IS already false*
+### truthy
+everything thing else becomes true when converted to a boolean.
+for example any number that is not 0, string with text etc.
+### Type Coercion in boolean
+Happens automatically in if/else statements:
+```js
+let money = 0;
+if (money) {
+    console.log(`Don't spend it all`);
+} else {
+    console.log('Get a job!');
+}
+```
+```js
+let height; //Is left empty so undefined!
+if (height) {
+    console.log('is defined');
+} else {
+    console.log('is not defined');
+}
 ```
