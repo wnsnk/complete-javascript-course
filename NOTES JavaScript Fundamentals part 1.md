@@ -270,3 +270,26 @@ If you use backticks you can also just press enter like you would do outside of 
 const string = `Hello
 How are you?`
 ```
+## Lecture 18: Taking decisions: if / else statements
+### if / else controle structure
+2 examples of a if / else statement. 
+The else block is optional.
+```js
+const age = 19;
+
+if (age >= 18) {
+    console.log('Can start driving license');
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Too young, wait ${yearsLeft} years.`);
+}
+```
+```js
+const birthYear = 1990;
+let century;
+if (birthYear < 2000) {
+    century = 20;
+} else {
+    century = 21;
+};
+````
