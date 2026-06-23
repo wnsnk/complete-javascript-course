@@ -50,3 +50,22 @@ if (population > averagePopulationOfACountry) {
     console.log(`${country}'s population is ${averagePopulationOfACountry - population} below the average.`);
 
 };
+
+//lecture 20:
+// Predict the result of these 5 operations without executing them:
+// Execute the operations to check if you were right.
+console.log('9' - '5'); // -> 4
+console.log('19' - '13' + '17'); // -> 617
+console.log('19' - '13' + 17); // -> 23
+console.log('123' < 57); // -> false
+console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 117
+// Execute the operations to check if you were right.
+console.log('9' - '5'); // -> 4
+console.log('19' - '13' + '17'); // -> '617'
+console.log('19' - '13' + 17); // -> 23
+console.log('123' < 57); // -> false
+console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
+// 3/5 correct.
+// #2 Result should have been a string instead of a number
+// #5 Counted 5 + 6 + '4' = 114 + 9 = 123 - 4 - 2 = 117. 
+// But should have counted 5 + 6 + '4' = '114' + 9 = '1149' - 4 - 2 = 1143.

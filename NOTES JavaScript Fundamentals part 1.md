@@ -292,4 +292,38 @@ if (birthYear < 2000) {
 } else {
     century = 21;
 };
-````
+```
+## Lecture 20 Type Conversion and Coercion
+### Type Conversion
+When we manually change the type of a variable
+
+#### Converting string to a number
+```js
+let year = '1990';
+year += 18; // 199018
+year = '1990';
+year = number(year);
+year += 18; // 2008
+```
+Converting a normal string (without a number) returns NaN (not a number)
+#### Converting to string
+```js
+string(1999);
+```
+#### Converting to boolean
+```js
+
+```
+
+### Type Coercion
+When JavaScript changes the type of a variable automatically behind the scenes.
+```js
+console.log('i am' + 23 + 'years old'); 
+// automatically converts this number into a string
+console.log('23' - '10' - 3); 
+// automatically converts string into numbers (not when using + !!!!)
+```
+```js
+let n = '1' + 1; //converts number to string: 11
+n = n - 1; //converts string to number: 10
+```
