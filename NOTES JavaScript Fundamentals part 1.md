@@ -295,20 +295,20 @@ if (birthYear < 2000) {
 ```
 ## Lecture 20 Type Conversion and Coercion
 ### Type Conversion
-When we manually change the type of a variable
+When we manually change the type of a variable.
 
 #### Converting string to a number
 ```js
 let year = '1990';
 year += 18; // 199018
 year = '1990';
-year = number(year);
+year = Number(year);
 year += 18; // 2008
 ```
 Converting a normal string (without a number) returns NaN (not a number)
 #### Converting to string
 ```js
-string(1999);
+String(1999);
 ```
 #### Converting to boolean
 ```js
@@ -358,3 +358,53 @@ if (height) {
     console.log('is not defined');
 }
 ```
+## Lecture 22: Equality operators === vs. ==
+### === (strict)
+Does not do type coercion.
+Will test if both values are exactly the same:
+```18 === 18; // true```
+```'18' === 18; //false```
+### == (loose)
+== Does do type coercion:
+```18 == 18; // true```
+```'18' == 18; //true```
+Should be avoided because can lead to unexpected and hard to find bugs.
+### !== (strict)
+!== Does not do type coercion.
+``` 18 !== 18; //false```
+```'18' !== 18; //true```
+### != (loose)
+!= Does do type coercion:
+``` 18 != 18; //false```
+```'18' != 18; //false```
+Should also be avoided because can lead to unexpected and hard to find bugs.
+### prompt
+A prompt is sort of like alert except you the messagebox has a input.
+```js
+prompt('What is your favourite number?');
+// Returns a string
+```
+### else if statement
+Works the same as elif in Python.
+Python:
+```py
+fav_number = int(input('What is your favourite number?'))
+if fav_number == 7:
+    print(('7 is also my favourite number!'))
+elif fav_number == 23:
+    print('This is my second favourite number')
+else:
+    print('number is not 7 or 23')
+```
+Javascript:
+```js
+const favNumber = Number(prompt('What is your favourite number?'));
+if (favNumber === 7) {
+    console.log('7 is also my favourite number!');
+} else if (favNumber === 23) {
+    console.log('This is my second favourite number');
+} else {
+    console.log('number is not 7 or 23');
+}
+```
+you can add as many else if statements as necessary.
