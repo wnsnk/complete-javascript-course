@@ -35,3 +35,8 @@ hasMorePeopleThanFinland = population > finlandPopulation;
 const averagePopulationOfACountry = 33000000;
 hasLessPopulationThanAverage = population < averagePopulationOfACountry;
 console.log(country, 'is in', continent, 'and its', population, 'people speak', language);
+
+// Lecture 17:
+// Recreate the description variable from the last assignment, this time using the template literal syntax.
+const description = `${country} is in ${continent} and it's ${population} people speak ${language}.`;
+console.log(description)

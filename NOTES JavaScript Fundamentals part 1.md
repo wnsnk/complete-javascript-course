@@ -246,3 +246,27 @@ const ageMark = 20;
 const averageAge = (ageJohn + ageMark) / 2;
 // Division gets executed before addition so use bracket's.
 ```
+## Lecture 17: Strings and Template Literals
+### Template Literals
+Can assemble multiple pieces in one string. (LIke a F-string in Python)
+But you have to use backticks (`) instead of (') or (")
+Add variables with a dollar sign and curly braces. ```${variable}```
+```js
+const firstName = 'John';
+const job = 'Programmer';
+const birthYear = 1990;
+
+const john = `I'm ${firstname}, i am a ${job}. I was born in ${birthYear}`;
+```
+You can also use back ticks to write all strings!
+
+### New Line character
+The new line character is \n\.
+```js
+const string = 'Hello\n\how are you?'
+```
+If you use backticks you can also just press enter like you would do outside of programming.
+```js
+const string = `Hello
+How are you?`
+```
