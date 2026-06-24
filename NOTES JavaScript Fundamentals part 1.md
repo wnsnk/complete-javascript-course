@@ -416,7 +416,7 @@ Operator: &&
 |  TRUE |  true  |  false  |
 | FALSE |  false |  false  |
 ### or
-Operator: |
+Operator: ||
 |   or  |  TRUE  |  FALSE  |
 |-------|--------|---------|
 |  TRUE |  true  |   true  |
@@ -436,13 +436,13 @@ hasDriversLicens || hasGoodVision || !isTired; // true
 ## Lecture 26: the switch statement
 the ```switch``` statement is almost like a if / else block. It strictly checks the value. Needs a ```break``` statement or it will go on and continue the code of the next case.
 at the end of the block a default statement is used like a else statement would work.
-pro's: easier to read, less repetitive code (```if day ===```)
-con's: a little bit longer to write
+- pro's: easier to read, less repetitive code (```if day ===```)
+- con's: a little bit longer to write
 ```js
-const day = 'monday'
+const day = 'monday';
 
 switch(day) {
-    case 'monday': //day ==== 'monday'
+    case 'monday': //day === 'monday'
         console.log('go sport');
         console.log('do dishes');
         break; // needs break or else would log 'go fishing'
@@ -466,7 +466,7 @@ switch(day) {
 ```
 The same code in a if / else block:
 ```js
-const day = 'monday'
+const day = 'monday';
 
 if (day === 'monday'){
         console.log('go sport');
@@ -483,3 +483,15 @@ if (day === 'monday'){
     console.log('not a valid day');
 }
 ```
+## Lecture 27: Statements and Expressions
+### Expression
+an expression produces a value.
+- ```3 + 4```
+- ```'a string'```
+- ```const javascriptIsFun =  true```
+
+### Statements
+a statement is a bigger piece of code that is executed and does not produce a value on itself.
+- if / else statements
+
+## lecture 28: the conditional (ternary) operator
