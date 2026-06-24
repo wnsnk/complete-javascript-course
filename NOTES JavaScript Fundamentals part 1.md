@@ -408,3 +408,16 @@ if (favNumber === 7) {
 }
 ```
 you can add as many else if statements as necessary.
+## Lecture 23: Boolean Logic: and, or & not operators
+### and
+| and  | TRUE |  FALSE  |
+|-------|-----|-------|
+| TRUE | true  | false |
+| FALSE   | false  | false   |
+### or
+| or  | TRUE |  FALSE  |
+|-------|-----|-------|
+| TRUE | true  | true |
+| FALSE   | true  | false   |
+### not
+inverts the value
