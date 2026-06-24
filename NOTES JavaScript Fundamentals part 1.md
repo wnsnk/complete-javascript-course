@@ -408,16 +408,28 @@ if (favNumber === 7) {
 }
 ```
 you can add as many else if statements as necessary.
-## Lecture 23: Boolean Logic: and, or & not operators
+## Lecture 23 and 24: Boolean Logic: and, or & not operators
 ### and
-| and  | TRUE |  FALSE  |
-|-------|-----|-------|
-| TRUE | true  | false |
-| FALSE   | false  | false   |
+Operator: &&
+|  and  |  TRUE  |  FALSE  |
+|-------|--------|---------|
+|  TRUE |  true  |  false  |
+| FALSE |  false |  false  |
 ### or
-| or  | TRUE |  FALSE  |
-|-------|-----|-------|
-| TRUE | true  | true |
-| FALSE   | true  | false   |
+Operator: |
+|   or  |  TRUE  |  FALSE  |
+|-------|--------|---------|
+|  TRUE |  true  |   true  |
+| FALSE |  true  |  false  |
 ### not
+Operator: !
 inverts the value
+### examples
+```js
+const hasDriversLicense = false;
+const hasGoodVision = true;
+const isTired = false;
+
+hasDriversLicense && hasGoodVision && !isTired; // false
+hasDriversLicens || hasGoodVision || !isTired; // true
+```
