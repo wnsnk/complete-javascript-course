@@ -339,7 +339,7 @@ There are 5 'falsy' values:
 *false is not falsy because IT IS already false*
 ### truthy
 everything thing else becomes true when converted to a boolean.
-for example any number that is not 0, string with text etc.
+for example any number that is not 0 (also lower than zero, like -1), string with text etc.
 ### Type Coercion in boolean
 Happens automatically in if/else statements:
 ```js
@@ -432,4 +432,54 @@ const isTired = false;
 
 hasDriversLicense && hasGoodVision && !isTired; // false
 hasDriversLicens || hasGoodVision || !isTired; // true
+```
+## Lecture 26: the switch statement
+the ```switch``` statement is almost like a if / else block. It strictly checks the value. Needs a ```break``` statement or it will go on and continue the code of the next case.
+at the end of the block a default statement is used like a else statement would work.
+pro's: easier to read, less repetitive code (```if day ===```)
+con's: a little bit longer to write
+```js
+const day = 'monday'
+
+switch(day) {
+    case 'monday': //day ==== 'monday'
+        console.log('go sport');
+        console.log('do dishes');
+        break; // needs break or else would log 'go fishing'
+    case 'tuesday':
+        console.log('go fishing');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('on wednesday and thursday go for a run!');
+        break;
+    case 'friday':
+        console.log('almost weekend!');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('enjoy the weekend');
+        break;
+    default;
+    console.log('not a valid day');
+}
+```
+The same code in a if / else block:
+```js
+const day = 'monday'
+
+if (day === 'monday'){
+        console.log('go sport');
+        console.log('do dishes');
+} else if (day === 'tuesday') {
+    console.log('go fishing');
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log('on wednesday and thursday go for a run!');
+} else if (day === 'friday') {
+    console.log('almost weekend!');
+} else if (day === 'saturday' || day === 'sunday') {
+    console.log('enjoy the weekend');
+} else {
+    console.log('not a valid day');
+}
 ```
