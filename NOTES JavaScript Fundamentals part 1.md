@@ -510,3 +510,24 @@ const drink = age >= 18 ? 'alcohol' : 'water';
 ```js
 console.log(`I like to drink: ${age >= 18 ? 'wine': 'water'}`)
 ```
+## lecture 30: JavaScript Releases: ES5, ES6+ AND ESNext
+### History of javascript
+- 1995: first version of javascript (mocha) was released (built in just 10 days)
+- 1996: Mocha changes it's name to LiveScript and then to JavaScript. To attract Java developers. (JavaScript has almost nothing to do with Java)
+- 1996: Microsoft launches Internet Explorer, copying JavaScript from Netscape and jalling it JScript
+- 1997: Needing to standardize the language, ECMA releases ECMAScript 1 (ES1) the first official standard for JavaScrpt (ECMAScript is the standard, JavaScript is the language in practice)
+- 2009: ES5 is released with great new features
+- 2015: ES6/ ES2015 was released: The biggest update to the language ever! ECMA changes to a annual release cycle.
+### Backwards compatability
+JavaScript is fully backwards compatible. code written in 1996 does still work with modern browsers.
+- Old features are NEVER removed
+- websites keep working forever
+### How to Use Modern JavaScript today
+- During development: Use a up to date browser!
+- During production: Use Babel to transpile abd polyfill your code (converting back to ES5 to ensure browser compatibility for all users)
+### ES6+
+ES6+ Is every version since ES6 (ES2015)
+- Can use most features with transpiling nd polyfilling
+### ESNext
+Future versions of the language. ES2027, ES2028 Etc
+- can use some features in production with transpiling and polyfilling
