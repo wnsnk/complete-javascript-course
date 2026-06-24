@@ -495,3 +495,18 @@ a statement is a bigger piece of code that is executed and does not produce a va
 - if / else statements
 
 ## lecture 28: the conditional (ternary) operator
+the conditional operator let's us write something similar to a if / else statement. but all in the same line.
+Operator: ?
+
+```js
+const age = 23;
+
+age >= 18 ? console.log('You are an adult'): // if age >= 18
+console.log('You are under age'); //else
+```
+```js
+const drink = age >= 18 ? 'alcohol' : 'water';
+```
+```js
+console.log(`I like to drink: ${age >= 18 ? 'wine': 'water'}`)
+```
