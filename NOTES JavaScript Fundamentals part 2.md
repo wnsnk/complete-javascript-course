@@ -79,3 +79,16 @@ yearsUntilRetirement = (birthYear, firstName) => {
     return `${firstName} retires in ${retirement} years.`;
 }
 ```
+## Lecture 37: Functions calling other functions:
+```js
+function fruitCutter(fruit) {
+    return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = fruitCutter(apples);
+    const orangePieces = fruitCutter(oranges);
+    const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges`;
+    return juice;
+}
+```
