@@ -26,6 +26,40 @@ function fruitProcessor(apples, oranges) {
 
 const appleJuice = fruitProcessor(5, 0);
 console.log(appleJuice);
-
-
 ```
+
+## Lecture 35: Function Declarations vs. Expressions
+There are two ways to write a function:
+### Declaring:
+```js
+function calcAge1(birthYear) {
+    const currentYear = 2026;
+    return currentYear - birthYear;
+}
+
+const age1 = calcAge1(1990);
+```
+### Expression:
+```js
+const calcAge2 = function (birthYear) {
+    return currentYear - birthYear;
+}
+
+const age2 = calcAge2(1995);
+```
+### What is the big difference?
+You can call function declarations before they are defined in the code:
+```js
+
+const age1 = calcAge(1990); // Gets called before function is defined!
+function calcAge(birthYear) {
+    const currentYear = 2026;
+    return currentYear - birthYear;
+}
+
+const age2 = calcAge(1990); // Gets called after function is defined!
+
+console.log(age1. age2);
+```
+### Which one should i use?
+Most of the time it does not matter.
