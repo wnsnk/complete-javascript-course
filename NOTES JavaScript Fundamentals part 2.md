@@ -92,3 +92,23 @@ function fruitProcessor(apples, oranges) {
     return juice;
 }
 ```
+## Lecture 38: Reviewing Functions
+```js
+const calcAge = function (birthYear) {
+    return 2026 - birthYear;
+}
+yearsUntilRetirement = function (birthYear, firstName) {
+    const age = calcAge(birthYear);
+    const retirement = 67 - age;
+    if (retirement > 0) {
+        return `${firstName} retires in ${retirement} years.`;
+    } else {
+        return `Enjoy your retirement!`;
+    }
+    
+}
+```
+
+
+
+
