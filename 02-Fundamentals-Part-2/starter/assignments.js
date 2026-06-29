@@ -13,6 +13,7 @@ const describeGermany = describeCountry('Germany', '83 million', 'Berlin');
 console.log(describeNetherlands);
 console.log(describeAmerica);
 console.log(describeGermany);
+// -----------------------------------------------------------------------------------------------------
 
 // lecture 35
 // The world population is 7900 million people. Create a function declaration called percentageOfWorld1 which receives a population value, and returns the percentage of the world population that the given population represents. For example, China has 1441 million people, so it's about 18.2% of the world population.
@@ -41,3 +42,13 @@ netherlandsPercentageOfWorld = percentageOfWorld2(netherlandsPopulation);
 americaPercentageOfWorld = percentageOfWorld2(americaPopulation);
 germanyPecentageOfWorld = percentageOfWorld2(germanyPopulation);
 console.log(netherlandsPercentageOfWorld, americaPercentageOfWorld, germanyPecentageOfWorld);
+// -----------------------------------------------------------------------------------------------------
+
+// Lecture 36
+// Recreate the last assignment, but this time create an arrow function called percentageOfWorld3.
+const percentageOfWorld3 = population => population / worldPopulation * 100;
+netherlandsPercentageOfWorld = percentageOfWorld3(netherlandsPopulation);
+americaPercentageOfWorld = percentageOfWorld3(americaPopulation);
+germanyPecentageOfWorld = percentageOfWorld3(germanyPopulation);
+console.log(netherlandsPercentageOfWorld, americaPercentageOfWorld, germanyPecentageOfWorld);
+// -----------------------------------------------------------------------------------------------------

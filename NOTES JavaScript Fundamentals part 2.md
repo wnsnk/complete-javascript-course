@@ -63,3 +63,19 @@ console.log(age1. age2);
 ```
 ### Which one should i use?
 Most of the time it does not matter.
+
+## Lecture 36: Arrow Functions
+Faster to write only one line of code. automatically returns a variable.
+```js
+const calcAge = birthYear => 2026 - birthYear;
+
+const age = calcAge(1990);
+```
+You can use multiple lines of code but then you need to write the return statement and curly braces
+```js
+yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2026 - birthYear;
+    const retirement = 67 - age;
+    return `${firstName} retires in ${retirement} years.`;
+}
+```
