@@ -109,6 +109,14 @@ yearsUntilRetirement = function (birthYear, firstName) {
 }
 ```
 
+## Lecture 40: Introduction to Arrays
+A array is a list of values. Works the same as a list in Python
+There are two ways to create an array
+```js
+const fruits = ['apples', 'bananas', 'pears'];
+console.log(fruits[0]); // Returns apples
+console.log(fruits.length); // Returns 3
 
-
-
+const years = new Array(1990, 1995, 2000, 2005);
+years[1] = 1996; // Replaces 1995 with 1996
+```
