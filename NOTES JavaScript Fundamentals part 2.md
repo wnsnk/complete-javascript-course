@@ -120,3 +120,26 @@ console.log(fruits.length); // Returns 3
 const years = new Array(1990, 1995, 2000, 2005);
 years[1] = 1996; // Replaces 1995 with 1996
 ```
+## Lecture 41 Basic Array Operations
+### Add something to an array
+```js
+const friends = ['john', 'eric'];
+friends.push('mark'); // Adds mark to the end of friends
+
+friends.unshift('ron'); // adds ron to the beginning of friends
+```
+### Remove something from array
+```js
+friends.pop(); // removes the last thing from the array
+
+friends.shift(); // removes the first thing from the array
+```
+### Find index of a value
+```js
+console.log(friends.indexOf('eric'));
+```
+### Check if value is in an array
+returns a boolean
+```js
+console.log(friends.includes('charlie')); 
+```
