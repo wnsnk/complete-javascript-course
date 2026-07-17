@@ -96,3 +96,14 @@ if (!neighbours.includes('germany')) {
 // Change the name of one of your neighbouring countries. To do that, find the index of the country in the neighbours array, and then use that index to change the array at that index position. For example, you can search for 'Sweden' in the array, and then replace it with 'Republic of Sweden'.
 neighbours[0] = 'deutschland';
 // -----------------------------------------------------------------------------------------------------
+
+// Lecture 43:
+// Create an object called myCountry for a country of your choice, containing properties country, capital, language, population and neighbours (an array like we used in previous assignments).
+const myCountry = {
+    country: 'Netherlands',
+    capital: 'Amsterdam',
+    language: 'Dutch',
+    population: netherlandsPopulation,
+    neighbours: neighbours,
+};
+// -----------------------------------------------------------------------------------------------------

@@ -143,3 +143,11 @@ returns a boolean
 ```js
 console.log(friends.includes('charlie')); 
 ```
+## Lecture 43: Introduction to Objects
+```js
+const personalInfo = {
+    firstName: 'John',
+    lastName: 'Johnson',
+    age: 2026-1990,
+}
+```
