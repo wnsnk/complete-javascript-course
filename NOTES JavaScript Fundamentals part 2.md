@@ -151,3 +151,26 @@ const personalInfo = {
     age: 2026-1990,
 }
 ```
+## lecture 44 dot vs bracket notation
+### Dot notation
+```js
+console.log(personalInfo.firstName);
+```
+### Bracket notation
+```js
+console.log(personalInfo['firstName']);
+
+const nameKey = 'Name';
+console.log(personalInfo['first' + nameKey]);
+console.log(personalInfo['last' + nameKey]);
+```
+### adding things to a object
+```js
+personalInfo.location = 'Netherlands';
+personalInfo['Friends'] = ['Charlie', 'Alan', 'Jake'];
+```
+
+### Example
+```js
+console.log(`${personalInfo.firstName} has ${personalInfo.Friends.length} friends an his best friend is called ${personalInfo.Friends[0]}!`);
+```

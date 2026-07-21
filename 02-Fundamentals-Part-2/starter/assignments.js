@@ -107,3 +107,22 @@ const myCountry = {
     neighbours: neighbours,
 };
 // -----------------------------------------------------------------------------------------------------
+const personalInfo = {
+    firstName: 'John',
+    lastName: 'Johnson',
+    age: 2026 - 1990,
+}
+
+personalInfo.location = 'Netherlands';
+personalInfo['Friends'] = ['Charlie', 'Alan', 'Jake'];
+
+console.log(`${personalInfo.firstName} has ${personalInfo.Friends.length} friends an his best friend is called ${personalInfo.Friends[0]}! `);
+
+// lecture 44:
+// Using the object from the previous assignment, log a string like this to the console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries and a capital called Helsinki'.
+console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language} speaking people, ${myCountry.neighbours.length} neighbours and a capital named ${myCountry.capital}`);
+// Increase the country's population by two million using dot notation, and then decrease it by two million using bracket notation.
+myCountry.population += 2000000;
+myCountry['population'] -= 2000000;
+console.log(myCountry.population);
+// -----------------------------------------------------------------------------------------------------
