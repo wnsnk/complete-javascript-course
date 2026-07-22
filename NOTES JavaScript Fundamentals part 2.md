@@ -174,3 +174,39 @@ personalInfo['Friends'] = ['Charlie', 'Alan', 'Jake'];
 ```js
 console.log(`${personalInfo.firstName} has ${personalInfo.Friends.length} friends an his best friend is called ${personalInfo.Friends[0]}!`);
 ```
+## Lecture 45: Object Methods
+You can add functions to a object
+```js
+const personalInfo = {
+    firstName: 'John',
+    lastName: 'Johnson',
+    calcAge: function (birthyear) {
+        return 2026 - birthyear;
+    }
+}
+```
+### The this keyword
+Works kind of like the self keyword in Python.
+```js
+const personalInfo = {
+    firstName: 'John',
+    lastName: 'Johnson',
+    birthYear: 1990,
+    calcAge: function () {
+        return 2026 - this.birthYear;
+    }
+}
+```
+```js
+const personalInfo = {
+    firstName: 'John',
+    lastName: 'Johnson',
+    birthYear: 1990,
+    calcAge: function () {
+        this.age = 2026 - this.birthYear;
+        return this.age;
+    }
+}
+
+console.log(personalInfo.age);
+```

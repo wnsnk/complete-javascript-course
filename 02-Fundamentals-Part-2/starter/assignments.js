@@ -118,6 +118,12 @@ personalInfo['Friends'] = ['Charlie', 'Alan', 'Jake'];
 
 console.log(`${personalInfo.firstName} has ${personalInfo.Friends.length} friends an his best friend is called ${personalInfo.Friends[0]}! `);
 
+personalInfo.summary = function () {
+    return `${this.firstName} has ${this.Friends.length} friends an his best friend is called ${this.Friends[0]}!`;
+}
+
+console.log(personalInfo.summary());
+
 // lecture 44:
 // Using the object from the previous assignment, log a string like this to the console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries and a capital called Helsinki'.
 console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language} speaking people, ${myCountry.neighbours.length} neighbours and a capital named ${myCountry.capital}`);
@@ -126,3 +132,20 @@ myCountry.population += 2000000;
 myCountry['population'] -= 2000000;
 console.log(myCountry.population);
 // -----------------------------------------------------------------------------------------------------
+
+// Lecture 45:
+// Add a method called describe to the myCountry object. This method will log a string to the console, similar to the string logged in the previous assignment, but this time using the 'this' keyword.
+myCountry.describe = function () {
+    return `${myCountry.country} has ${this.population} ${this.language} speaking people, ${this.neighbours.length} neighbours and a capital named ${this.capital}`;
+}
+
+// Call the describe method.
+console.log(myCountry.describe());
+
+// Add a method called checkIsland to the myCountry object. This method will set a new property on the object, called isIsland. isIsland will be true if there are no neighbouring countries, and false if there are. Use the ternary operator to set the property.
+
+myCountry.checkIsIsland = function () {
+    this.isIsland = this.neighbours.length === 0 ? true : false;
+}
+myCountry.checkIsIsland()
+console.log(myCountry)
