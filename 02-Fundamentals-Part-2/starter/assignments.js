@@ -123,6 +123,7 @@ personalInfo.summary = function () {
 }
 
 console.log(personalInfo.summary());
+// -----------------------------------------------------------------------------------------------------
 
 // lecture 44:
 // Using the object from the previous assignment, log a string like this to the console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries and a capital called Helsinki'.
@@ -147,5 +148,12 @@ console.log(myCountry.describe());
 myCountry.checkIsIsland = function () {
     this.isIsland = this.neighbours.length === 0 ? true : false;
 }
-myCountry.checkIsIsland()
-console.log(myCountry)
+myCountry.checkIsIsland();
+console.log(myCountry);
+// -----------------------------------------------------------------------------------------------------
+
+// Lecture 47
+// There are elections in your country! in a small town, there are only 50 voters. Use a for loop to simulate the 50 people voting, by logging a string like this to the console (for numbers 1 to 50): 'Voter number 1 is currently voting'.
+for (let voter = 1; voter <= 50; voter++) {
+    console.log(`Voter #${voter} is currently voting`);
+}

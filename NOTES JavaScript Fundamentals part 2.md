@@ -210,3 +210,9 @@ const personalInfo = {
 
 console.log(personalInfo.age);
 ```
+## Lecture 47: The for loop
+```js
+for(let rep = 1; rep <= 10; rep ++) {
+    console.log(`count: ${rep}`)
+}
+```
