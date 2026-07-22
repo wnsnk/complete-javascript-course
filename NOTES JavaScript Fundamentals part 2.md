@@ -216,3 +216,41 @@ for(let rep = 1; rep <= 10; rep ++) {
     console.log(`count: ${rep}`)
 }
 ```
+## Lecture 48: Looping arrays, breaking and continuing
+### Looping arrays
+```js
+const myArray = [
+    'apples',
+    900,
+    true,
+    '900',
+];
+
+const types = [];
+
+for (index=0; index < myArray.length; index++) {
+    console.log(myArray[index]);
+
+    // types[index] = typeof myArray[index]; OR:
+    types.push(typeof myArray[index]);
+}
+```
+### Continue
+continue is to exit the current iteration of the loop and continue to the next one.
+```js
+for (index=0; index < myArray.length; index++) {
+    if (typeof myArray[index] !== 'string') continue;
+    // if the type of value is not a string the next line does not get printed but the loop continues to the next thing in the array.
+    console.log(myArray[index]);
+}
+```
+### break
+break is used to complety break out of the loop.
+```js
+for (index=0; index <= myArray.length; index++) {
+    if (typeof myArray[index] !== 'string') break;
+    // if the type of value is not a string the loop breaks and does not go further.
+
+    console.log(myArray[index]);
+}
+```

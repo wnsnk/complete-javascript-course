@@ -157,3 +157,20 @@ console.log(myCountry);
 for (let voter = 1; voter <= 50; voter++) {
     console.log(`Voter #${voter} is currently voting`);
 }
+// -----------------------------------------------------------------------------------------------------
+
+// Lecture 48
+// Let's bring back the populations array from a previous assignment.
+
+// Use a for loop to compute an array called percentages2 containing the percentages of the world population for the 4 population values. Use the function percentageWOrld1 that you created earlier.
+const percentages2 = []
+for (index = 0; index < populations.length; index++) {
+    percentages2.push(percentageOfWorld1(populations[index]));
+
+}
+// Confirm that percentages2 contains exactly the same values as the percentages array that we created manually in the previous assignment, and reflect on how much better this solution is.
+console.log(percentages);
+console.log(percentages2);
+// The for loop is a lot cleaner and easier to write.
+
+// -----------------------------------------------------------------------------------------------------
