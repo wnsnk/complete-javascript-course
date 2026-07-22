@@ -191,3 +191,15 @@ for (let group = 0; group < listOfNeighbours.length; group++) {
         console.log(neighbourArray[neighbour]);
     }
 }
+// -----------------------------------------------------------------------------------------------------
+
+// Lecture 50:
+// Recreate the challenge from the lecture Looping Arrays, Breaking and Continuing, but this time using a while loop (call the array percentages3).
+const percentages3 = [];
+let index = 0;
+while (index < populations.length) {
+    percentages3.push(percentageOfWorld1(populations[index]));
+    index++;
+}
+console.log(percentages3);
+// Reflect on what solution you like better for this task: the for loop or the while loop?

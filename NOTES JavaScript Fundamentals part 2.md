@@ -270,3 +270,23 @@ for (let exercise = 1; exercise <= 3; exercise ++) {
     }
 }
 ```
+## lecture 50: the while loop
+```js
+let rep = 1;
+while (rep <= 10) {
+    console.log(rep);
+    rep ++;
+}
+```
+Watch out for endless loops!!! Could crash browser..
+```js
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) {
+        console.log('Ending loop')
+    }
+}
+```
