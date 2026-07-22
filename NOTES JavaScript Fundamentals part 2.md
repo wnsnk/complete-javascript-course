@@ -228,7 +228,7 @@ const myArray = [
 
 const types = [];
 
-for (index=0; index < myArray.length; index++) {
+for (let index=0; index < myArray.length; index++) {
     console.log(myArray[index]);
 
     // types[index] = typeof myArray[index]; OR:
@@ -238,7 +238,7 @@ for (index=0; index < myArray.length; index++) {
 ### Continue
 continue is to exit the current iteration of the loop and continue to the next one.
 ```js
-for (index=0; index < myArray.length; index++) {
+for (let index=0; index < myArray.length; index++) {
     if (typeof myArray[index] !== 'string') continue;
     // if the type of value is not a string the next line does not get printed but the loop continues to the next thing in the array.
     console.log(myArray[index]);
@@ -247,10 +247,26 @@ for (index=0; index < myArray.length; index++) {
 ### break
 break is used to complety break out of the loop.
 ```js
-for (index=0; index <= myArray.length; index++) {
+for (let index=0; index <= myArray.length; index++) {
     if (typeof myArray[index] !== 'string') break;
     // if the type of value is not a string the loop breaks and does not go further.
 
     console.log(myArray[index]);
+}
+```
+## lecture 49: looping backwards and loops in loops
+### looping backwards
+```js
+for (let index = myArray.length; index >= 0; index--) {
+    console.log(myArray[index]);
+}
+```
+### Loop in a loop
+```js
+for (let exercise = 1; exercise <= 3; exercise ++) {
+    console.log(`starting exercise ${exercise}`);
+    for (let rep = 1; rep <= 5; rep++) {
+        console.log(`rep: ${rep}`);
+    }
 }
 ```

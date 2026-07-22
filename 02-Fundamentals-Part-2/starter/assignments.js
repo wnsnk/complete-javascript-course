@@ -164,7 +164,7 @@ for (let voter = 1; voter <= 50; voter++) {
 
 // Use a for loop to compute an array called percentages2 containing the percentages of the world population for the 4 population values. Use the function percentageWOrld1 that you created earlier.
 const percentages2 = []
-for (index = 0; index < populations.length; index++) {
+for (let index = 0; index < populations.length; index++) {
     percentages2.push(percentageOfWorld1(populations[index]));
 
 }
@@ -174,3 +174,20 @@ console.log(percentages2);
 // The for loop is a lot cleaner and easier to write.
 
 // -----------------------------------------------------------------------------------------------------
+
+// lecture 49:
+
+//     Store this array of arrays into a variable called listOfNeighbours:
+// [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+
+const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+
+//     Log only the neighbouring countries to the console, one by one, not the entire arrays. Log a string like 'Neighbour: Canada' for each country.
+
+//     You will need a loop inside a loop for this. This is actually a bit tricky, so don't worry if it's too difficult for you! But you can still try to figure this out anyway 😉
+for (let group = 0; group < listOfNeighbours.length; group++) {
+    neighbourArray = listOfNeighbours[group]
+    for (let neighbour = 0; neighbour < neighbourArray.length; neighbour++) {
+        console.log(neighbourArray[neighbour]);
+    }
+}
