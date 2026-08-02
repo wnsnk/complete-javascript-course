@@ -35,3 +35,11 @@ document.querySelector("#form").value;
 ```js
 document.querySelector("#form").value = "hi";
 ```
+
+## Lecture 77: Handling click events
+
+```js
+document.querySelector("#button").addEventListener("click", function () {
+  console.log(document.querySelector("#form").value);
+});
+```
