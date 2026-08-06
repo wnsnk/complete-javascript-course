@@ -43,3 +43,12 @@ document.querySelector("#button").addEventListener("click", function () {
   console.log(document.querySelector("#form").value);
 });
 ```
+
+## Lecture 83
+
+Queryselector will only target the first element that meets the condition.
+if you want to target all you use
+
+```js
+document.querySelectorAll(".class");
+```
